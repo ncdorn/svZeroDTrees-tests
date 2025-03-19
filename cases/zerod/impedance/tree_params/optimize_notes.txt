@@ -1,0 +1,7 @@
+if we optimize d_root for lpa and rpa for cassian, we hit the pressure targets (14/9/11) well with:
+k2 = -23.77857324
+d_lpa = 0.425611
+d_rpa = 0.3911366
+
+We will now try optimizing the terminal diameter
+

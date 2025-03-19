@@ -1,0 +1,766 @@
+{
+    "boundary_conditions": [
+        {
+            "bc_name": "INFLOW",
+            "bc_type": "FLOW",
+            "bc_values": {
+                "Q": [
+                    41.7,
+                    41.7
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_0",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_1",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_2",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_3",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_4",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_5",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_6",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_7",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_8",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_9",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_10",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_11",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_12",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_13",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_14",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_15",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_16",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_17",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_18",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_19",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_20",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_21",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_22",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_23",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_24",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_25",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_26",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_27",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_28",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_29",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_30",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_31",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_32",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_33",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_34",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_35",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_36",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_37",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_38",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_39",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_40",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_41",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_42",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_43",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_44",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_45",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_46",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_47",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_48",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_49",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_50",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_51",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_52",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_53",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_54",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_55",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_56",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_57",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_58",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_59",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_60",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_61",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_62",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_63",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_64",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_65",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_66",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_67",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_68",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_69",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_70",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_71",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_72",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_73",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_74",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_75",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_76",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_77",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_78",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_79",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_80",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_81",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_82",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_83",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_84",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_85",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_86",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_87",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_88",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_89",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_90",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        },
+        {
+            "bc_name": "RESISTANCE_91",
+            "bc_type": "RESISTANCE",
+            "bc_values": {
+                "Pd": 6.0,
+                "R": 100.0
+            }
+        }
+    ],
+    "junctions": [],
+    "simulation_parameters": {
+        "coupled_simulation": true,
+        "number_of_time_pts": 2,
+        "output_all_cycles": true,
+        "steady_initial": false,
+        "density": 1.06,
+        "viscosity": 0.04,
+        "number_of_time_pts_per_cardiac_cycle": 2
+    },
+    "vessels": [],
+    "external_solver_coupling_blocks": []
+}

@@ -31,6 +31,7 @@ def test_config_handler():
 
     print(config_handler.config)
 
+
 def test_coupled_tree_construction():
     '''
     test the construction of a coupled tree
@@ -54,6 +55,7 @@ def test_data_handling():
 
     print(df)
 
+
 def test_interface():
     '''
     test the interface
@@ -63,6 +65,7 @@ def test_interface():
     adapted_dir = '../threed_models/AS2_opt_fs/adapted'
     zerod_config = '../threed_models/AS2_opt_fs/zerod/preop_config.json'
     interface.run_threed_from_msh(preop_dir, postop_dir, adapted_dir, zerod_config)
+
 
 def test_steady_sim_setup():
     '''
@@ -77,15 +80,17 @@ def test_steady_sim_setup():
 
     simulation.generate_simplified_zerod()
 
+
 def test_sim_dir():
     '''
     test the simulation directory
     '''
     os.chdir('cases/threed/SU0243/')
 
-    sim = Simulation(zerod_config='preop/SU0243_optimized.json')
+    sim = Simulation(zerod_config='preop/SU0243_optimized.json', adapted_dir='adapted-50iter')
 
-    sim.run_pipeline(False, True)
+    sim.run_pipeline(False, False, False)
+
 
 def test_adapt_trees():
 
@@ -94,7 +99,6 @@ def test_adapt_trees():
     adapted_sim_path = 'cases/threed/SU0243/adapted'
 
     adapt_threed(preop_sim_dir, postop_sim_dir, adapted_sim_path)
-
 
 
 

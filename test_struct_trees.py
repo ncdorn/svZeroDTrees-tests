@@ -155,6 +155,36 @@ def test_impedance_trees():
     plt.show()
 
 
+def test_tree_adaptation():
+    '''
+    test the adaptation of a tree
+    '''
+
+    k1_l = 19992500
+    k2_l = -25
+    k3_l = 0.0
+    lrr_l = 10.0
+    d_l = 0.2
+    d_min = 0.2
+
+    time_array = np.linspace(0, 1, 512)
+
+    test_tree = StructuredTree(name='test', time=time_array, simparams=None) 
+    print(f'building test tree...')
+    test_tree.build_tree(initial_d=d_l, d_min=d_min, lrr=lrr_l)
+
+    with open(f'cases/zerod/tree-adaptation/tree_config_{d_l}_{d_min}.json', 'w') as f:
+        json.dump(test_tree.block_dict, f, indent=4)
+
+    print(f"preop tree resistance: {test_tree.root.R_eq}")
+
+    test_tree.adapt_wss_ims(Q=10.0, Q_new=20.0)
+
+    print(f"postop tree resistance: {test_tree.root.R_eq}")
+
+
+    with open(f'cases/zerod/tree-adaptation/tree_config_{d_l}_{d_min}_adapted.json', 'w') as f:
+        json.dump(test_tree.block_dict, f, indent=4)
 
 
 
@@ -179,6 +209,6 @@ def fix_zerod_config():
 if __name__ == '__main__':
 
     # fix_zerod_config()
-    test_impedance_trees()
+    test_tree_adaptation()
 
 

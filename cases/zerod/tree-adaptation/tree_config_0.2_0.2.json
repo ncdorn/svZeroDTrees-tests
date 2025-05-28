@@ -1,0 +1,81 @@
+{
+    "name": "test",
+    "initial_d": 0.5,
+    "P_in": null,
+    "Q_in": null,
+    "boundary_conditions": [],
+    "simulation_parameters": null,
+    "vessels": [
+        {
+            "vessel_id": 0,
+            "vessel_length": 1.0,
+            "vessel_name": "branch0_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 1247.7747538404594,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.2,
+            "generation": 0,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "inlet": "INFLOW"
+            }
+        },
+        {
+            "vessel_id": 1,
+            "vessel_length": 0.9087043307650988,
+            "vessel_name": "branch1_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 1662.9086820983814,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.18174086615301976,
+            "generation": 1,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d1"
+            }
+        },
+        {
+            "vessel_id": 2,
+            "vessel_length": 0.5781530881973255,
+            "vessel_name": "branch2_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 6456.655948087523,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.1156306176394651,
+            "generation": 1,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d2"
+            }
+        }
+    ],
+    "junctions": [
+        {
+            "junction_name": "J0",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                0
+            ],
+            "outlet_vessels": [
+                1,
+                2
+            ]
+        }
+    ],
+    "adaptations": 0
+}

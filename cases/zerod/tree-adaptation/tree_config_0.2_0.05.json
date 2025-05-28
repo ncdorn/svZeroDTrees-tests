@@ -1,0 +1,4870 @@
+{
+    "name": "test",
+    "initial_d": 0.5,
+    "P_in": null,
+    "Q_in": null,
+    "boundary_conditions": [
+        {
+            "bc_name": "INFLOW",
+            "bc_type": "FLOW",
+            "bc_values": {
+                "Q": [
+                    10.0,
+                    10.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d14",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d22",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d26",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d28",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d36",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d40",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d42",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d46",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d48",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d50",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d54",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d56",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d57",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d58",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d60",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d61",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d62",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d63",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d64",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d66",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d67",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d68",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d69",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d70",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d71",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d72",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d74",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d75",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d76",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d77",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d78",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d79",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d80",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d81",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d82",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d86",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d88",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d90",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d92",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d94",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d96",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d100",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d102",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d104",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d106",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d108",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d110",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d112",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d116",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d118",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d120",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d122",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d124",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d126",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d128",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d130",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d132",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d133",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d134",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d135",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d136",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d137",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d138",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d139",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d140",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d141",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d142",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d143",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d144",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d145",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d146",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d147",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d148",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d149",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d150",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d152",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d154",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d156",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d158",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d159",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "bc_name": "P_d160",
+            "bc_type": "PRESSURE",
+            "bc_values": {
+                "P": [
+                    0.0,
+                    0.0
+                ],
+                "t": [
+                    0.0,
+                    1.0
+                ]
+            }
+        }
+    ],
+    "simulation_parameters": {
+        "density": 1.06,
+        "model_name": "test",
+        "number_of_cardiac_cycles": 1,
+        "number_of_time_pts_per_cardiac_cycle": 10,
+        "viscosity": 0.04
+    },
+    "vessels": [
+        {
+            "vessel_id": 0,
+            "vessel_length": 1.0,
+            "vessel_name": "branch0_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 1247.7747538404594,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.2,
+            "generation": 0,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "inlet": "INFLOW"
+            }
+        },
+        {
+            "vessel_id": 1,
+            "vessel_length": 0.9087043307650988,
+            "vessel_name": "branch1_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 1662.9086820983814,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.18174086615301976,
+            "generation": 1,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 2,
+            "vessel_length": 0.5781530881973255,
+            "vessel_name": "branch2_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 6456.655948087523,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.1156306176394651,
+            "generation": 1,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 3,
+            "vessel_length": 0.825743560751246,
+            "vessel_name": "branch3_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 2216.15742463703,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.1651487121502492,
+            "generation": 2,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 4,
+            "vessel_length": 0.5253702150901258,
+            "vessel_name": "branch4_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 8604.781592471387,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.10507404301802516,
+            "generation": 2,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 5,
+            "vessel_length": 0.5253702150901257,
+            "vessel_name": "branch5_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 8604.78159247139,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.10507404301802514,
+            "generation": 2,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 6,
+            "vessel_length": 0.33426099339210436,
+            "vessel_name": "branch6_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 33410.20156375459,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.06685219867842088,
+            "generation": 2,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 7,
+            "vessel_length": 0.7503567497560506,
+            "vessel_name": "branch7_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 2953.4716991051628,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.15007134995121013,
+            "generation": 3,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 8,
+            "vessel_length": 0.4774061897073887,
+            "vessel_name": "branch8_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 11467.587377962414,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.09548123794147774,
+            "generation": 3,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 9,
+            "vessel_length": 0.4774061897073887,
+            "vessel_name": "branch9_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 11467.587377962414,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.09548123794147774,
+            "generation": 3,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 10,
+            "vessel_length": 0.3037444123012494,
+            "vessel_name": "branch10_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 44525.756014877734,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.06074888246024987,
+            "generation": 3,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 11,
+            "vessel_length": 0.47740618970738863,
+            "vessel_name": "branch11_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 11467.58737796242,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.09548123794147773,
+            "generation": 3,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 12,
+            "vessel_length": 0.3037444123012493,
+            "vessel_name": "branch12_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 44525.75601487774,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.06074888246024986,
+            "generation": 3,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 13,
+            "vessel_length": 0.30374441230124927,
+            "vessel_name": "branch13_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 44525.756014877756,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.060748882460249856,
+            "generation": 3,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 14,
+            "vessel_length": 0.19325402559355095,
+            "vessel_name": "branch14_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 172882.30587249156,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03865080511871019,
+            "generation": 3,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d14"
+            }
+        },
+        {
+            "vessel_id": 15,
+            "vessel_length": 0.6818524281221466,
+            "vessel_name": "branch15_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 3936.0899999438534,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.13637048562442933,
+            "generation": 4,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 16,
+            "vessel_length": 0.4338210721211684,
+            "vessel_name": "branch16_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 15282.846968046408,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.08676421442423368,
+            "generation": 4,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 17,
+            "vessel_length": 0.4338210721211684,
+            "vessel_name": "branch17_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 15282.846968046408,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.08676421442423368,
+            "generation": 4,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 18,
+            "vessel_length": 0.276013862903845,
+            "vessel_name": "branch18_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 59339.44890794087,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.055202772580769,
+            "generation": 4,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 19,
+            "vessel_length": 0.4338210721211684,
+            "vessel_name": "branch19_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 15282.846968046408,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.08676421442423368,
+            "generation": 4,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 20,
+            "vessel_length": 0.276013862903845,
+            "vessel_name": "branch20_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 59339.44890794087,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.055202772580769,
+            "generation": 4,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 21,
+            "vessel_length": 0.276013862903845,
+            "vessel_name": "branch21_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 59339.44890794087,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.055202772580769,
+            "generation": 4,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 22,
+            "vessel_length": 0.17561076999464903,
+            "vessel_name": "branch22_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 230400.14756807004,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.0351221539989298,
+            "generation": 4,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d22"
+            }
+        },
+        {
+            "vessel_id": 23,
+            "vessel_length": 0.4338210721211683,
+            "vessel_name": "branch23_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 15282.846968046413,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.08676421442423367,
+            "generation": 4,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 24,
+            "vessel_length": 0.27601386290384494,
+            "vessel_name": "branch24_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 59339.44890794088,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.05520277258076899,
+            "generation": 4,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 25,
+            "vessel_length": 0.27601386290384494,
+            "vessel_name": "branch25_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 59339.44890794088,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.05520277258076899,
+            "generation": 4,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 26,
+            "vessel_length": 0.17561076999464897,
+            "vessel_name": "branch26_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 230400.14756807016,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.035122153998929796,
+            "generation": 4,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d26"
+            }
+        },
+        {
+            "vessel_id": 27,
+            "vessel_length": 0.27601386290384494,
+            "vessel_name": "branch27_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 59339.44890794092,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.055202772580768986,
+            "generation": 4,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 28,
+            "vessel_length": 0.17561076999464897,
+            "vessel_name": "branch28_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 230400.14756807016,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.035122153998929796,
+            "generation": 4,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d28"
+            }
+        },
+        {
+            "vessel_id": 29,
+            "vessel_length": 0.6196022543772929,
+            "vessel_name": "branch29_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 5245.624832752582,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.12392045087545857,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 30,
+            "vessel_length": 0.394215087013664,
+            "vessel_name": "branch30_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 20367.44118449662,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.07884301740273279,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 31,
+            "vessel_length": 0.394215087013664,
+            "vessel_name": "branch31_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 20367.44118449662,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.07884301740273279,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 32,
+            "vessel_length": 0.2508149925719282,
+            "vessel_name": "branch32_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 79081.64873206352,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.05016299851438563,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 33,
+            "vessel_length": 0.394215087013664,
+            "vessel_name": "branch33_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 20367.44118449662,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.07884301740273279,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 34,
+            "vessel_length": 0.2508149925719282,
+            "vessel_name": "branch34_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 79081.64873206352,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.05016299851438563,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 35,
+            "vessel_length": 0.2508149925719282,
+            "vessel_name": "branch35_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 79081.64873206352,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.05016299851438563,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 36,
+            "vessel_length": 0.1595782672231312,
+            "vessel_name": "branch36_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 307054.14143735723,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03191565344462624,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d36"
+            }
+        },
+        {
+            "vessel_id": 37,
+            "vessel_length": 0.394215087013664,
+            "vessel_name": "branch37_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 20367.44118449662,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.07884301740273279,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 38,
+            "vessel_length": 0.2508149925719282,
+            "vessel_name": "branch38_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 79081.64873206352,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.05016299851438563,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 39,
+            "vessel_length": 0.2508149925719282,
+            "vessel_name": "branch39_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 79081.64873206352,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.05016299851438563,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 40,
+            "vessel_length": 0.1595782672231312,
+            "vessel_name": "branch40_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 307054.14143735723,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03191565344462624,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d40"
+            }
+        },
+        {
+            "vessel_id": 41,
+            "vessel_length": 0.2508149925719282,
+            "vessel_name": "branch41_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 79081.64873206352,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.05016299851438563,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 42,
+            "vessel_length": 0.1595782672231312,
+            "vessel_name": "branch42_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 307054.14143735723,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03191565344462624,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d42"
+            }
+        },
+        {
+            "vessel_id": 43,
+            "vessel_length": 0.3942150870136639,
+            "vessel_name": "branch43_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 20367.44118449663,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.07884301740273278,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 44,
+            "vessel_length": 0.25081499257192813,
+            "vessel_name": "branch44_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 79081.64873206355,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.050162998514385625,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 45,
+            "vessel_length": 0.2508149925719282,
+            "vessel_name": "branch45_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 79081.64873206352,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.05016299851438563,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 46,
+            "vessel_length": 0.15957826722313118,
+            "vessel_name": "branch46_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 307054.14143735747,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.031915653444626234,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d46"
+            }
+        },
+        {
+            "vessel_id": 47,
+            "vessel_length": 0.2508149925719282,
+            "vessel_name": "branch47_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 79081.64873206352,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.05016299851438563,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 48,
+            "vessel_length": 0.15957826722313118,
+            "vessel_name": "branch48_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 307054.14143735747,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.031915653444626234,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d48"
+            }
+        },
+        {
+            "vessel_id": 49,
+            "vessel_length": 0.25081499257192813,
+            "vessel_name": "branch49_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 79081.64873206355,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.050162998514385625,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 50,
+            "vessel_length": 0.15957826722313118,
+            "vessel_name": "branch50_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 307054.14143735747,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.031915653444626234,
+            "generation": 5,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d50"
+            }
+        },
+        {
+            "vessel_id": 51,
+            "vessel_length": 0.5630352519044644,
+            "vessel_name": "branch51_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 6990.841135843707,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.11260705038089287,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 52,
+            "vessel_length": 0.3582249568222567,
+            "vessel_name": "branch52_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 27143.676912506355,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.07164499136445134,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 53,
+            "vessel_length": 0.3582249568222567,
+            "vessel_name": "branch53_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 27143.676912506355,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.07164499136445134,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 54,
+            "vessel_length": 0.2279166699709272,
+            "vessel_name": "branch54_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 105392.06685056652,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.04558333399418544,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d54"
+            }
+        },
+        {
+            "vessel_id": 55,
+            "vessel_length": 0.3582249568222567,
+            "vessel_name": "branch55_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 27143.676912506355,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.07164499136445134,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 56,
+            "vessel_length": 0.2279166699709272,
+            "vessel_name": "branch56_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 105392.06685056652,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.04558333399418544,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d56"
+            }
+        },
+        {
+            "vessel_id": 57,
+            "vessel_length": 0.2279166699709272,
+            "vessel_name": "branch57_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 105392.06685056652,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.04558333399418544,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d57"
+            }
+        },
+        {
+            "vessel_id": 58,
+            "vessel_length": 0.1450094625216495,
+            "vessel_name": "branch58_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 409210.8740771428,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.029001892504329902,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d58"
+            }
+        },
+        {
+            "vessel_id": 59,
+            "vessel_length": 0.3582249568222567,
+            "vessel_name": "branch59_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 27143.676912506355,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.07164499136445134,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 60,
+            "vessel_length": 0.2279166699709272,
+            "vessel_name": "branch60_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 105392.06685056652,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.04558333399418544,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d60"
+            }
+        },
+        {
+            "vessel_id": 61,
+            "vessel_length": 0.2279166699709272,
+            "vessel_name": "branch61_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 105392.06685056652,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.04558333399418544,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d61"
+            }
+        },
+        {
+            "vessel_id": 62,
+            "vessel_length": 0.1450094625216495,
+            "vessel_name": "branch62_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 409210.8740771428,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.029001892504329902,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d62"
+            }
+        },
+        {
+            "vessel_id": 63,
+            "vessel_length": 0.2279166699709272,
+            "vessel_name": "branch63_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 105392.06685056652,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.04558333399418544,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d63"
+            }
+        },
+        {
+            "vessel_id": 64,
+            "vessel_length": 0.1450094625216495,
+            "vessel_name": "branch64_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 409210.8740771428,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.029001892504329902,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d64"
+            }
+        },
+        {
+            "vessel_id": 65,
+            "vessel_length": 0.3582249568222567,
+            "vessel_name": "branch65_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 27143.676912506355,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.07164499136445134,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 66,
+            "vessel_length": 0.2279166699709272,
+            "vessel_name": "branch66_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 105392.06685056652,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.04558333399418544,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d66"
+            }
+        },
+        {
+            "vessel_id": 67,
+            "vessel_length": 0.2279166699709272,
+            "vessel_name": "branch67_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 105392.06685056652,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.04558333399418544,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d67"
+            }
+        },
+        {
+            "vessel_id": 68,
+            "vessel_length": 0.1450094625216495,
+            "vessel_name": "branch68_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 409210.8740771428,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.029001892504329902,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d68"
+            }
+        },
+        {
+            "vessel_id": 69,
+            "vessel_length": 0.2279166699709272,
+            "vessel_name": "branch69_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 105392.06685056652,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.04558333399418544,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d69"
+            }
+        },
+        {
+            "vessel_id": 70,
+            "vessel_length": 0.1450094625216495,
+            "vessel_name": "branch70_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 409210.8740771428,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.029001892504329902,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d70"
+            }
+        },
+        {
+            "vessel_id": 71,
+            "vessel_length": 0.2279166699709272,
+            "vessel_name": "branch71_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 105392.06685056652,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.04558333399418544,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d71"
+            }
+        },
+        {
+            "vessel_id": 72,
+            "vessel_length": 0.1450094625216495,
+            "vessel_name": "branch72_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 409210.8740771428,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.029001892504329902,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d72"
+            }
+        },
+        {
+            "vessel_id": 73,
+            "vessel_length": 0.35822495682225663,
+            "vessel_name": "branch73_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 27143.676912506373,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.07164499136445132,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 74,
+            "vessel_length": 0.22791666997092716,
+            "vessel_name": "branch74_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 105392.06685056657,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.04558333399418543,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d74"
+            }
+        },
+        {
+            "vessel_id": 75,
+            "vessel_length": 0.22791666997092716,
+            "vessel_name": "branch75_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 105392.06685056657,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.04558333399418543,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d75"
+            }
+        },
+        {
+            "vessel_id": 76,
+            "vessel_length": 0.14500946252164948,
+            "vessel_name": "branch76_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 409210.87407714286,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.0290018925043299,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d76"
+            }
+        },
+        {
+            "vessel_id": 77,
+            "vessel_length": 0.2279166699709272,
+            "vessel_name": "branch77_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 105392.06685056652,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.04558333399418544,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d77"
+            }
+        },
+        {
+            "vessel_id": 78,
+            "vessel_length": 0.1450094625216495,
+            "vessel_name": "branch78_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 409210.8740771428,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.029001892504329902,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d78"
+            }
+        },
+        {
+            "vessel_id": 79,
+            "vessel_length": 0.2279166699709272,
+            "vessel_name": "branch79_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 105392.06685056652,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.04558333399418544,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d79"
+            }
+        },
+        {
+            "vessel_id": 80,
+            "vessel_length": 0.1450094625216495,
+            "vessel_name": "branch80_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 409210.8740771428,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.029001892504329902,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d80"
+            }
+        },
+        {
+            "vessel_id": 81,
+            "vessel_length": 0.22791666997092716,
+            "vessel_name": "branch81_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 105392.06685056657,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.04558333399418543,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d81"
+            }
+        },
+        {
+            "vessel_id": 82,
+            "vessel_length": 0.14500946252164948,
+            "vessel_name": "branch82_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 409210.87407714286,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.0290018925043299,
+            "generation": 6,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d82"
+            }
+        },
+        {
+            "vessel_id": 83,
+            "vessel_length": 0.511632571779005,
+            "vessel_name": "branch83_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 9316.689878669726,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.10232651435580101,
+            "generation": 7,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 84,
+            "vessel_length": 0.3255205696525251,
+            "vessel_name": "branch84_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 36174.3622901121,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.06510411393050503,
+            "generation": 7,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 85,
+            "vessel_length": 0.3255205696525251,
+            "vessel_name": "branch85_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 36174.3622901121,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.06510411393050503,
+            "generation": 7,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 86,
+            "vessel_length": 0.2071088650561413,
+            "vessel_name": "branch86_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 140455.9456349672,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.041421773011228256,
+            "generation": 7,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d86"
+            }
+        },
+        {
+            "vessel_id": 87,
+            "vessel_length": 0.3255205696525251,
+            "vessel_name": "branch87_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 36174.3622901121,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.06510411393050503,
+            "generation": 7,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 88,
+            "vessel_length": 0.2071088650561413,
+            "vessel_name": "branch88_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 140455.9456349672,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.041421773011228256,
+            "generation": 7,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d88"
+            }
+        },
+        {
+            "vessel_id": 89,
+            "vessel_length": 0.3255205696525251,
+            "vessel_name": "branch89_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 36174.3622901121,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.06510411393050503,
+            "generation": 7,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 90,
+            "vessel_length": 0.2071088650561413,
+            "vessel_name": "branch90_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 140455.9456349672,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.041421773011228256,
+            "generation": 7,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d90"
+            }
+        },
+        {
+            "vessel_id": 91,
+            "vessel_length": 0.3255205696525251,
+            "vessel_name": "branch91_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 36174.3622901121,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.06510411393050503,
+            "generation": 7,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 92,
+            "vessel_length": 0.2071088650561413,
+            "vessel_name": "branch92_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 140455.9456349672,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.041421773011228256,
+            "generation": 7,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d92"
+            }
+        },
+        {
+            "vessel_id": 93,
+            "vessel_length": 0.3255205696525251,
+            "vessel_name": "branch93_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 36174.3622901121,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.06510411393050503,
+            "generation": 7,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 94,
+            "vessel_length": 0.2071088650561413,
+            "vessel_name": "branch94_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 140455.9456349672,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.041421773011228256,
+            "generation": 7,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d94"
+            }
+        },
+        {
+            "vessel_id": 95,
+            "vessel_length": 0.32552056965252507,
+            "vessel_name": "branch95_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 36174.36229011213,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.06510411393050501,
+            "generation": 7,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 96,
+            "vessel_length": 0.20710886505614123,
+            "vessel_name": "branch96_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 140455.94563496724,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.04142177301122825,
+            "generation": 7,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d96"
+            }
+        },
+        {
+            "vessel_id": 97,
+            "vessel_length": 0.4649227337360671,
+            "vessel_name": "branch97_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 12416.34713314525,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.09298454674721342,
+            "generation": 8,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 98,
+            "vessel_length": 0.29580195139637155,
+            "vessel_name": "branch98_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 48209.55139255132,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.05916039027927431,
+            "generation": 8,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 99,
+            "vessel_length": 0.29580195139637155,
+            "vessel_name": "branch99_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 48209.55139255132,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.05916039027927431,
+            "generation": 8,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 100,
+            "vessel_length": 0.18820072261635998,
+            "vessel_name": "branch100_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 187185.55631122267,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.037640144523271996,
+            "generation": 8,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d100"
+            }
+        },
+        {
+            "vessel_id": 101,
+            "vessel_length": 0.29580195139637155,
+            "vessel_name": "branch101_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 48209.55139255132,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.05916039027927431,
+            "generation": 8,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 102,
+            "vessel_length": 0.18820072261635998,
+            "vessel_name": "branch102_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 187185.55631122267,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.037640144523271996,
+            "generation": 8,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d102"
+            }
+        },
+        {
+            "vessel_id": 103,
+            "vessel_length": 0.29580195139637155,
+            "vessel_name": "branch103_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 48209.55139255132,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.05916039027927431,
+            "generation": 8,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 104,
+            "vessel_length": 0.18820072261635998,
+            "vessel_name": "branch104_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 187185.55631122267,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.037640144523271996,
+            "generation": 8,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d104"
+            }
+        },
+        {
+            "vessel_id": 105,
+            "vessel_length": 0.29580195139637155,
+            "vessel_name": "branch105_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 48209.55139255132,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.05916039027927431,
+            "generation": 8,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 106,
+            "vessel_length": 0.18820072261635998,
+            "vessel_name": "branch106_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 187185.55631122267,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.037640144523271996,
+            "generation": 8,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d106"
+            }
+        },
+        {
+            "vessel_id": 107,
+            "vessel_length": 0.29580195139637155,
+            "vessel_name": "branch107_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 48209.55139255132,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.05916039027927431,
+            "generation": 8,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 108,
+            "vessel_length": 0.18820072261635998,
+            "vessel_name": "branch108_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 187185.55631122267,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.037640144523271996,
+            "generation": 8,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d108"
+            }
+        },
+        {
+            "vessel_id": 109,
+            "vessel_length": 0.29580195139637155,
+            "vessel_name": "branch109_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 48209.55139255132,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.05916039027927431,
+            "generation": 8,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 110,
+            "vessel_length": 0.18820072261635998,
+            "vessel_name": "branch110_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 187185.55631122267,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.037640144523271996,
+            "generation": 8,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d110"
+            }
+        },
+        {
+            "vessel_id": 111,
+            "vessel_length": 0.2958019513963715,
+            "vessel_name": "branch111_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 48209.55139255135,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.0591603902792743,
+            "generation": 8,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 112,
+            "vessel_length": 0.18820072261635995,
+            "vessel_name": "branch112_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 187185.55631122284,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03764014452327199,
+            "generation": 8,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d112"
+            }
+        },
+        {
+            "vessel_id": 113,
+            "vessel_length": 0.422477301617113,
+            "vessel_name": "branch113_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 16547.25853693186,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.0844954603234226,
+            "generation": 9,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 114,
+            "vessel_length": 0.26879651428265006,
+            "vessel_name": "branch114_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 64248.84084567079,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.053759302856530015,
+            "generation": 9,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 115,
+            "vessel_length": 0.26879651428265006,
+            "vessel_name": "branch115_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 64248.84084567079,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.053759302856530015,
+            "generation": 9,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 116,
+            "vessel_length": 0.1710188116946074,
+            "vessel_name": "branch116_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 249462.08103289365,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03420376233892148,
+            "generation": 9,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d116"
+            }
+        },
+        {
+            "vessel_id": 117,
+            "vessel_length": 0.26879651428265006,
+            "vessel_name": "branch117_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 64248.84084567079,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.053759302856530015,
+            "generation": 9,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 118,
+            "vessel_length": 0.1710188116946074,
+            "vessel_name": "branch118_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 249462.08103289365,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03420376233892148,
+            "generation": 9,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d118"
+            }
+        },
+        {
+            "vessel_id": 119,
+            "vessel_length": 0.26879651428265006,
+            "vessel_name": "branch119_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 64248.84084567079,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.053759302856530015,
+            "generation": 9,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 120,
+            "vessel_length": 0.1710188116946074,
+            "vessel_name": "branch120_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 249462.08103289365,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03420376233892148,
+            "generation": 9,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d120"
+            }
+        },
+        {
+            "vessel_id": 121,
+            "vessel_length": 0.26879651428265006,
+            "vessel_name": "branch121_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 64248.84084567079,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.053759302856530015,
+            "generation": 9,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 122,
+            "vessel_length": 0.1710188116946074,
+            "vessel_name": "branch122_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 249462.08103289365,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03420376233892148,
+            "generation": 9,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d122"
+            }
+        },
+        {
+            "vessel_id": 123,
+            "vessel_length": 0.26879651428265006,
+            "vessel_name": "branch123_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 64248.84084567079,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.053759302856530015,
+            "generation": 9,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 124,
+            "vessel_length": 0.1710188116946074,
+            "vessel_name": "branch124_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 249462.08103289365,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03420376233892148,
+            "generation": 9,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d124"
+            }
+        },
+        {
+            "vessel_id": 125,
+            "vessel_length": 0.26879651428265006,
+            "vessel_name": "branch125_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 64248.84084567079,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.053759302856530015,
+            "generation": 9,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 126,
+            "vessel_length": 0.1710188116946074,
+            "vessel_name": "branch126_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 249462.08103289365,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03420376233892148,
+            "generation": 9,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d126"
+            }
+        },
+        {
+            "vessel_id": 127,
+            "vessel_length": 0.26879651428265006,
+            "vessel_name": "branch127_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 64248.84084567079,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.053759302856530015,
+            "generation": 9,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 128,
+            "vessel_length": 0.1710188116946074,
+            "vessel_name": "branch128_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 249462.08103289365,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03420376233892148,
+            "generation": 9,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d128"
+            }
+        },
+        {
+            "vessel_id": 129,
+            "vessel_length": 0.26879651428265,
+            "vessel_name": "branch129_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 64248.84084567085,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.05375930285653,
+            "generation": 9,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 130,
+            "vessel_length": 0.17101881169460736,
+            "vessel_name": "branch130_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 249462.0810328938,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03420376233892147,
+            "generation": 9,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d130"
+            }
+        },
+        {
+            "vessel_id": 131,
+            "vessel_length": 0.38390695362942345,
+            "vessel_name": "branch131_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 22052.52174024097,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.07678139072588469,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 132,
+            "vessel_length": 0.24425655662320683,
+            "vessel_name": "branch132_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 85624.39248605257,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.048851311324641364,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d132"
+            }
+        },
+        {
+            "vessel_id": 133,
+            "vessel_length": 0.24425655662320683,
+            "vessel_name": "branch133_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 85624.39248605257,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.048851311324641364,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d133"
+            }
+        },
+        {
+            "vessel_id": 134,
+            "vessel_length": 0.15540553482919064,
+            "vessel_name": "branch134_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 332457.968978085,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03108110696583813,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d134"
+            }
+        },
+        {
+            "vessel_id": 135,
+            "vessel_length": 0.24425655662320683,
+            "vessel_name": "branch135_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 85624.39248605257,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.048851311324641364,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d135"
+            }
+        },
+        {
+            "vessel_id": 136,
+            "vessel_length": 0.15540553482919064,
+            "vessel_name": "branch136_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 332457.968978085,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03108110696583813,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d136"
+            }
+        },
+        {
+            "vessel_id": 137,
+            "vessel_length": 0.24425655662320683,
+            "vessel_name": "branch137_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 85624.39248605257,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.048851311324641364,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d137"
+            }
+        },
+        {
+            "vessel_id": 138,
+            "vessel_length": 0.15540553482919064,
+            "vessel_name": "branch138_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 332457.968978085,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03108110696583813,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d138"
+            }
+        },
+        {
+            "vessel_id": 139,
+            "vessel_length": 0.24425655662320683,
+            "vessel_name": "branch139_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 85624.39248605257,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.048851311324641364,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d139"
+            }
+        },
+        {
+            "vessel_id": 140,
+            "vessel_length": 0.15540553482919064,
+            "vessel_name": "branch140_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 332457.968978085,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03108110696583813,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d140"
+            }
+        },
+        {
+            "vessel_id": 141,
+            "vessel_length": 0.24425655662320683,
+            "vessel_name": "branch141_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 85624.39248605257,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.048851311324641364,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d141"
+            }
+        },
+        {
+            "vessel_id": 142,
+            "vessel_length": 0.15540553482919064,
+            "vessel_name": "branch142_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 332457.968978085,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03108110696583813,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d142"
+            }
+        },
+        {
+            "vessel_id": 143,
+            "vessel_length": 0.24425655662320683,
+            "vessel_name": "branch143_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 85624.39248605257,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.048851311324641364,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d143"
+            }
+        },
+        {
+            "vessel_id": 144,
+            "vessel_length": 0.15540553482919064,
+            "vessel_name": "branch144_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 332457.968978085,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03108110696583813,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d144"
+            }
+        },
+        {
+            "vessel_id": 145,
+            "vessel_length": 0.24425655662320683,
+            "vessel_name": "branch145_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 85624.39248605257,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.048851311324641364,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d145"
+            }
+        },
+        {
+            "vessel_id": 146,
+            "vessel_length": 0.15540553482919064,
+            "vessel_name": "branch146_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 332457.968978085,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03108110696583813,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d146"
+            }
+        },
+        {
+            "vessel_id": 147,
+            "vessel_length": 0.24425655662320683,
+            "vessel_name": "branch147_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 85624.39248605257,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.048851311324641364,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d147"
+            }
+        },
+        {
+            "vessel_id": 148,
+            "vessel_length": 0.15540553482919064,
+            "vessel_name": "branch148_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 332457.968978085,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03108110696583813,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d148"
+            }
+        },
+        {
+            "vessel_id": 149,
+            "vessel_length": 0.24425655662320678,
+            "vessel_name": "branch149_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 85624.39248605263,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.04885131132464136,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d149"
+            }
+        },
+        {
+            "vessel_id": 150,
+            "vessel_length": 0.15540553482919062,
+            "vessel_name": "branch150_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 332457.9689780852,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.031081106965838122,
+            "generation": 10,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d150"
+            }
+        },
+        {
+            "vessel_id": 151,
+            "vessel_length": 0.348857911373893,
+            "vessel_name": "branch151_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 29389.38278013824,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.0697715822747786,
+            "generation": 11,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 152,
+            "vessel_length": 0.2219569908212786,
+            "vessel_name": "branch152_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 114111.57761143621,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.04439139816425572,
+            "generation": 11,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d152"
+            }
+        },
+        {
+            "vessel_id": 153,
+            "vessel_length": 0.3170086948871236,
+            "vessel_name": "branch153_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 39167.21318185392,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.06340173897742471,
+            "generation": 12,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 154,
+            "vessel_length": 0.20169327880288512,
+            "vessel_name": "branch154_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 152076.4325083171,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.040338655760577026,
+            "generation": 12,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d154"
+            }
+        },
+        {
+            "vessel_id": 155,
+            "vessel_length": 0.28806717393412096,
+            "vessel_name": "branch155_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 52198.1220194096,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.057613434786824194,
+            "generation": 13,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 156,
+            "vessel_length": 0.18327955593439418,
+            "vessel_name": "branch156_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 202672.1723470321,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03665591118687884,
+            "generation": 13,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d156"
+            }
+        },
+        {
+            "vessel_id": 157,
+            "vessel_length": 0.2617678885051987,
+            "vessel_name": "branch157_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 69564.40657911026,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.05235357770103974,
+            "generation": 14,
+            "viscosity": 0.049,
+            "density": 1.055
+        },
+        {
+            "vessel_id": 158,
+            "vessel_length": 0.16654692621828812,
+            "vessel_name": "branch158_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 270101.085134402,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.033309385243657626,
+            "generation": 14,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d158"
+            }
+        },
+        {
+            "vessel_id": 159,
+            "vessel_length": 0.23786961393990957,
+            "vessel_name": "branch159_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 92708.4438191919,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.047573922787981913,
+            "generation": 15,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d159"
+            }
+        },
+        {
+            "vessel_id": 160,
+            "vessel_length": 0.15134191313017378,
+            "vessel_name": "branch160_seg0",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "R_poiseuille": 359963.55763070675,
+                "C": 0.0,
+                "L": 0.0,
+                "stenosis_coefficient": 0.0
+            },
+            "vessel_D": 0.03026838262603476,
+            "generation": 15,
+            "viscosity": 0.049,
+            "density": 1.055,
+            "boundary_conditions": {
+                "outlet": "P_d160"
+            }
+        }
+    ],
+    "junctions": [
+        {
+            "junction_name": "J0",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                0
+            ],
+            "outlet_vessels": [
+                1,
+                2
+            ]
+        },
+        {
+            "junction_name": "J1",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                1
+            ],
+            "outlet_vessels": [
+                3,
+                4
+            ]
+        },
+        {
+            "junction_name": "J2",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                2
+            ],
+            "outlet_vessels": [
+                5,
+                6
+            ]
+        },
+        {
+            "junction_name": "J3",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                3
+            ],
+            "outlet_vessels": [
+                7,
+                8
+            ]
+        },
+        {
+            "junction_name": "J4",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                4
+            ],
+            "outlet_vessels": [
+                9,
+                10
+            ]
+        },
+        {
+            "junction_name": "J5",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                5
+            ],
+            "outlet_vessels": [
+                11,
+                12
+            ]
+        },
+        {
+            "junction_name": "J6",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                6
+            ],
+            "outlet_vessels": [
+                13,
+                14
+            ]
+        },
+        {
+            "junction_name": "J7",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                7
+            ],
+            "outlet_vessels": [
+                15,
+                16
+            ]
+        },
+        {
+            "junction_name": "J8",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                8
+            ],
+            "outlet_vessels": [
+                17,
+                18
+            ]
+        },
+        {
+            "junction_name": "J9",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                9
+            ],
+            "outlet_vessels": [
+                19,
+                20
+            ]
+        },
+        {
+            "junction_name": "J10",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                10
+            ],
+            "outlet_vessels": [
+                21,
+                22
+            ]
+        },
+        {
+            "junction_name": "J11",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                11
+            ],
+            "outlet_vessels": [
+                23,
+                24
+            ]
+        },
+        {
+            "junction_name": "J12",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                12
+            ],
+            "outlet_vessels": [
+                25,
+                26
+            ]
+        },
+        {
+            "junction_name": "J13",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                13
+            ],
+            "outlet_vessels": [
+                27,
+                28
+            ]
+        },
+        {
+            "junction_name": "J14",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                15
+            ],
+            "outlet_vessels": [
+                29,
+                30
+            ]
+        },
+        {
+            "junction_name": "J15",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                16
+            ],
+            "outlet_vessels": [
+                31,
+                32
+            ]
+        },
+        {
+            "junction_name": "J16",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                17
+            ],
+            "outlet_vessels": [
+                33,
+                34
+            ]
+        },
+        {
+            "junction_name": "J17",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                18
+            ],
+            "outlet_vessels": [
+                35,
+                36
+            ]
+        },
+        {
+            "junction_name": "J18",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                19
+            ],
+            "outlet_vessels": [
+                37,
+                38
+            ]
+        },
+        {
+            "junction_name": "J19",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                20
+            ],
+            "outlet_vessels": [
+                39,
+                40
+            ]
+        },
+        {
+            "junction_name": "J20",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                21
+            ],
+            "outlet_vessels": [
+                41,
+                42
+            ]
+        },
+        {
+            "junction_name": "J21",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                23
+            ],
+            "outlet_vessels": [
+                43,
+                44
+            ]
+        },
+        {
+            "junction_name": "J22",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                24
+            ],
+            "outlet_vessels": [
+                45,
+                46
+            ]
+        },
+        {
+            "junction_name": "J23",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                25
+            ],
+            "outlet_vessels": [
+                47,
+                48
+            ]
+        },
+        {
+            "junction_name": "J24",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                27
+            ],
+            "outlet_vessels": [
+                49,
+                50
+            ]
+        },
+        {
+            "junction_name": "J25",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                29
+            ],
+            "outlet_vessels": [
+                51,
+                52
+            ]
+        },
+        {
+            "junction_name": "J26",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                30
+            ],
+            "outlet_vessels": [
+                53,
+                54
+            ]
+        },
+        {
+            "junction_name": "J27",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                31
+            ],
+            "outlet_vessels": [
+                55,
+                56
+            ]
+        },
+        {
+            "junction_name": "J28",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                32
+            ],
+            "outlet_vessels": [
+                57,
+                58
+            ]
+        },
+        {
+            "junction_name": "J29",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                33
+            ],
+            "outlet_vessels": [
+                59,
+                60
+            ]
+        },
+        {
+            "junction_name": "J30",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                34
+            ],
+            "outlet_vessels": [
+                61,
+                62
+            ]
+        },
+        {
+            "junction_name": "J31",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                35
+            ],
+            "outlet_vessels": [
+                63,
+                64
+            ]
+        },
+        {
+            "junction_name": "J32",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                37
+            ],
+            "outlet_vessels": [
+                65,
+                66
+            ]
+        },
+        {
+            "junction_name": "J33",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                38
+            ],
+            "outlet_vessels": [
+                67,
+                68
+            ]
+        },
+        {
+            "junction_name": "J34",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                39
+            ],
+            "outlet_vessels": [
+                69,
+                70
+            ]
+        },
+        {
+            "junction_name": "J35",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                41
+            ],
+            "outlet_vessels": [
+                71,
+                72
+            ]
+        },
+        {
+            "junction_name": "J36",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                43
+            ],
+            "outlet_vessels": [
+                73,
+                74
+            ]
+        },
+        {
+            "junction_name": "J37",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                44
+            ],
+            "outlet_vessels": [
+                75,
+                76
+            ]
+        },
+        {
+            "junction_name": "J38",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                45
+            ],
+            "outlet_vessels": [
+                77,
+                78
+            ]
+        },
+        {
+            "junction_name": "J39",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                47
+            ],
+            "outlet_vessels": [
+                79,
+                80
+            ]
+        },
+        {
+            "junction_name": "J40",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                49
+            ],
+            "outlet_vessels": [
+                81,
+                82
+            ]
+        },
+        {
+            "junction_name": "J41",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                51
+            ],
+            "outlet_vessels": [
+                83,
+                84
+            ]
+        },
+        {
+            "junction_name": "J42",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                52
+            ],
+            "outlet_vessels": [
+                85,
+                86
+            ]
+        },
+        {
+            "junction_name": "J43",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                53
+            ],
+            "outlet_vessels": [
+                87,
+                88
+            ]
+        },
+        {
+            "junction_name": "J44",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                55
+            ],
+            "outlet_vessels": [
+                89,
+                90
+            ]
+        },
+        {
+            "junction_name": "J45",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                59
+            ],
+            "outlet_vessels": [
+                91,
+                92
+            ]
+        },
+        {
+            "junction_name": "J46",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                65
+            ],
+            "outlet_vessels": [
+                93,
+                94
+            ]
+        },
+        {
+            "junction_name": "J47",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                73
+            ],
+            "outlet_vessels": [
+                95,
+                96
+            ]
+        },
+        {
+            "junction_name": "J48",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                83
+            ],
+            "outlet_vessels": [
+                97,
+                98
+            ]
+        },
+        {
+            "junction_name": "J49",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                84
+            ],
+            "outlet_vessels": [
+                99,
+                100
+            ]
+        },
+        {
+            "junction_name": "J50",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                85
+            ],
+            "outlet_vessels": [
+                101,
+                102
+            ]
+        },
+        {
+            "junction_name": "J51",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                87
+            ],
+            "outlet_vessels": [
+                103,
+                104
+            ]
+        },
+        {
+            "junction_name": "J52",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                89
+            ],
+            "outlet_vessels": [
+                105,
+                106
+            ]
+        },
+        {
+            "junction_name": "J53",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                91
+            ],
+            "outlet_vessels": [
+                107,
+                108
+            ]
+        },
+        {
+            "junction_name": "J54",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                93
+            ],
+            "outlet_vessels": [
+                109,
+                110
+            ]
+        },
+        {
+            "junction_name": "J55",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                95
+            ],
+            "outlet_vessels": [
+                111,
+                112
+            ]
+        },
+        {
+            "junction_name": "J56",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                97
+            ],
+            "outlet_vessels": [
+                113,
+                114
+            ]
+        },
+        {
+            "junction_name": "J57",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                98
+            ],
+            "outlet_vessels": [
+                115,
+                116
+            ]
+        },
+        {
+            "junction_name": "J58",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                99
+            ],
+            "outlet_vessels": [
+                117,
+                118
+            ]
+        },
+        {
+            "junction_name": "J59",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                101
+            ],
+            "outlet_vessels": [
+                119,
+                120
+            ]
+        },
+        {
+            "junction_name": "J60",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                103
+            ],
+            "outlet_vessels": [
+                121,
+                122
+            ]
+        },
+        {
+            "junction_name": "J61",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                105
+            ],
+            "outlet_vessels": [
+                123,
+                124
+            ]
+        },
+        {
+            "junction_name": "J62",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                107
+            ],
+            "outlet_vessels": [
+                125,
+                126
+            ]
+        },
+        {
+            "junction_name": "J63",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                109
+            ],
+            "outlet_vessels": [
+                127,
+                128
+            ]
+        },
+        {
+            "junction_name": "J64",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                111
+            ],
+            "outlet_vessels": [
+                129,
+                130
+            ]
+        },
+        {
+            "junction_name": "J65",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                113
+            ],
+            "outlet_vessels": [
+                131,
+                132
+            ]
+        },
+        {
+            "junction_name": "J66",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                114
+            ],
+            "outlet_vessels": [
+                133,
+                134
+            ]
+        },
+        {
+            "junction_name": "J67",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                115
+            ],
+            "outlet_vessels": [
+                135,
+                136
+            ]
+        },
+        {
+            "junction_name": "J68",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                117
+            ],
+            "outlet_vessels": [
+                137,
+                138
+            ]
+        },
+        {
+            "junction_name": "J69",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                119
+            ],
+            "outlet_vessels": [
+                139,
+                140
+            ]
+        },
+        {
+            "junction_name": "J70",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                121
+            ],
+            "outlet_vessels": [
+                141,
+                142
+            ]
+        },
+        {
+            "junction_name": "J71",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                123
+            ],
+            "outlet_vessels": [
+                143,
+                144
+            ]
+        },
+        {
+            "junction_name": "J72",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                125
+            ],
+            "outlet_vessels": [
+                145,
+                146
+            ]
+        },
+        {
+            "junction_name": "J73",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                127
+            ],
+            "outlet_vessels": [
+                147,
+                148
+            ]
+        },
+        {
+            "junction_name": "J74",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                129
+            ],
+            "outlet_vessels": [
+                149,
+                150
+            ]
+        },
+        {
+            "junction_name": "J75",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                131
+            ],
+            "outlet_vessels": [
+                151,
+                152
+            ]
+        },
+        {
+            "junction_name": "J76",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                151
+            ],
+            "outlet_vessels": [
+                153,
+                154
+            ]
+        },
+        {
+            "junction_name": "J77",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                153
+            ],
+            "outlet_vessels": [
+                155,
+                156
+            ]
+        },
+        {
+            "junction_name": "J78",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                155
+            ],
+            "outlet_vessels": [
+                157,
+                158
+            ]
+        },
+        {
+            "junction_name": "J79",
+            "junction_type": "NORMAL_JUNCTION",
+            "inlet_vessels": [
+                157
+            ],
+            "outlet_vessels": [
+                159,
+                160
+            ]
+        }
+    ],
+    "adaptations": 0
+}

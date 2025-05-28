@@ -1,0 +1,45 @@
+LPA flow: 6.577696098424999 (15.7%) | upper: 4.9% | middle: 7.2% | lower: 3.6%
+RPA flow: 35.06832295744894 (84.2%) | upper: 24.4% | middle: 39.7% | lower: 20.0%
+
+LPA flow: 6.577696098424999 (15.7%) | upper: 4.9% | middle: 7.2% | lower: 3.6%
+RPA flow: 35.06832295744894 (84.2%) | upper: 24.4% | middle: 39.7% | lower: 20.0%
+
+LPA flow: 6.577696098424999 (15.7%) | upper: 4.9% | middle: 7.2% | lower: 3.6%
+RPA flow: 35.06832295744894 (84.2%) | upper: 24.4% | middle: 39.7% | lower: 20.0%
+
+LPA flow: 6.577696098424999 (15.7%) | upper: 4.9% | middle: 7.2% | lower: 3.6%
+RPA flow: 35.06832295744894 (84.2%) | upper: 24.4% | middle: 39.7% | lower: 20.0%
+
+LPA flow: 6.577696098424999 (15.7%) | upper: 4.9% | middle: 7.2% | lower: 3.6%
+RPA flow: 35.06832295744894 (84.2%) | upper: 24.4% | middle: 39.7% | lower: 20.0%
+
+LPA flow: 6.577696098424999 (15.7%) | upper: 4.9% | middle: 7.2% | lower: 3.6%
+RPA flow: 35.06832295744894 (84.2%) | upper: 24.4% | middle: 39.7% | lower: 20.0%
+
+LPA flow: 6.577696098424999 (15.7%) | upper: 4.9% | middle: 7.2% | lower: 3.6%
+RPA flow: 35.06832295744894 (84.2%) | upper: 24.4% | middle: 39.7% | lower: 20.0%
+
+LPA flow: 6.577696098424999 (15.7%) | upper: 4.9% | middle: 7.2% | lower: 3.6%
+RPA flow: 35.06832295744894 (84.2%) | upper: 24.4% | middle: 39.7% | lower: 20.0%
+
+LPA flow: 6.577696098424999 (15.7%) | upper: 4.9% | middle: 7.2% | lower: 3.6%
+RPA flow: 35.06832295744894 (84.2%) | upper: 24.4% | middle: 39.7% | lower: 20.0%
+
+LPA flow: 6.577696098424999 (15.7%) | upper: 4.9% | middle: 7.2% | lower: 3.6%
+RPA flow: 35.06832295744894 (84.2%) | upper: 24.4% | middle: 39.7% | lower: 20.0%
+
+LPA flow: 6.577696098424999 (15.7%) | upper: 4.9% | middle: 7.2% | lower: 3.6%
+RPA flow: 35.06832295744894 (84.2%) | upper: 24.4% | middle: 39.7% | lower: 20.0%
+
+LPA flow: 6.577696098424999 (15.7%) | upper: 4.9% | middle: 7.2% | lower: 3.6%
+RPA flow: 35.06832295744894 (84.2%) | upper: 24.4% | middle: 39.7% | lower: 20.0%
+
+LPA flow: 6.577696098424999 (15.7%) | upper: 4.9% | middle: 7.2% | lower: 3.6%
+RPA flow: 35.06832295744894 (84.2%) | upper: 24.4% | middle: 39.7% | lower: 20.0%
+
+LPA flow: 6.577696098424999 (15.7%) | upper: 4.9% | middle: 7.2% | lower: 3.6%
+RPA flow: 35.06832295744894 (84.2%) | upper: 24.4% | middle: 39.7% | lower: 20.0%
+
+LPA flow: 6.577696098424999 (15.7%) | upper: 4.9% | middle: 7.2% | lower: 3.6%
+RPA flow: 35.06832295744894 (84.2%) | upper: 24.4% | middle: 39.7% | lower: 20.0%
+

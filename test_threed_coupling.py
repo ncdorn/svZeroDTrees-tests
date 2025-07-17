@@ -4,19 +4,14 @@ import os
 import numpy as np
 import time
 sys.path.append('/home/ndorn/Documents/Stanford/PhD/Simvascular/svZeroDPlus/structured_trees/src')
-from svzerodtrees.structuredtree import StructuredTree
+from svzerodtrees import *
 from pathlib import Path
 from svzerodtrees.post_processing.stree_visualization import *
 import matplotlib.pyplot as plt
 from svzerodtrees.utils import *
 from scipy.optimize import minimize
 from svzerodtrees.adaptation import *
-from svzerodtrees import operation, preop, interface
-from svzerodtrees.config_handler import ConfigHandler
-from svzerodtrees.result_handler import ResultHandler
-from svzerodtrees.simulation_directory import *
-from svzerodtrees.simulation import *
-from svzerodtrees.threedutils import *
+from svzerodtrees.io import ConfigHandler
 import pickle
 
 
@@ -25,7 +20,7 @@ def test_config_handler():
     test the config handler with a 3d-0d coupling file
     '''
     # load the config file
-    threed_coupling_config = 'tests/cases/threed_cylinder/Simulations/threed_cylinder_rigid/svzerod_3Dcoupling.json'
+    threed_coupling_config = 'tests/case s/threed_cylinder/Simulations/threed_cylinder_rigid/svzerod_3Dcoupling.json'
 
     config_handler = ConfigHandler.from_json(threed_coupling_config, is_pulmonary=False, is_threed_interface=True)
 
@@ -43,17 +38,6 @@ def test_coupled_tree_construction():
     config_handler = ConfigHandler.from_json(threed_coupling_config, is_pulmonary=False, is_threed_interface=True)
 
     preop.construct_coupled_cwss_trees(config_handler, simulation_dir)
-
-
-def test_data_handling():
-    '''
-    test random data handlers'''
-
-    Q_svZeroD = 'tests/cases/test_cylinder/Simulations/steady/Q_svZeroD'
-
-    df = get_outlet_flow(Q_svZeroD)
-
-    print(df)
 
 
 def test_interface():
@@ -87,7 +71,11 @@ def test_sim_dir():
     '''
     os.chdir('cases/threed/SU0243/')
 
-    sim = Simulation(zerod_config='preop/SU0243_optimized.json', adapted_dir='adapted-50iter')
+    sim = Simulation(zerod_config='preop/SU0243_optimized.json', adapted_dir='adapted-cwss-ims', adaptation_config={
+        "location": "uniform",
+        "method": "wss-ims",
+        "iterations": 100,
+    })
 
     sim.run_pipeline(False, False, False)
 
@@ -98,7 +86,7 @@ def test_adapt_trees():
     postop_sim_dir = SimulationDirectory.from_directory('cases/threed/SU0243/postop')
     adapted_sim_path = 'cases/threed/SU0243/adapted'
 
-    adapt_threed(preop_sim_dir, postop_sim_dir, adapted_sim_path)
+    # adapt_threed(preop_sim_dir, postop_sim_dir, adapted_sim_path)
 
 
 

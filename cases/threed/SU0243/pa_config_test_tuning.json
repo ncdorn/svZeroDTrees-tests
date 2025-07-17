@@ -1038,6 +1038,7 @@
             "bc_name": "LPA_BC",
             "bc_type": "IMPEDANCE",
             "bc_values": {
+                "tree": 0,
                 "Z": [
                     104730.231721069,
                     81110.04313011262,
@@ -2073,6 +2074,7 @@
             "bc_name": "RPA_BC",
             "bc_type": "IMPEDANCE",
             "bc_values": {
+                "tree": 1,
                 "Z": [
                     1962.3264467916458,
                     377.79401315437775,

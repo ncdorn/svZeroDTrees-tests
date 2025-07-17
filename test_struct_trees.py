@@ -21,6 +21,7 @@ from svzerodtrees.result_handler import ResultHandler
 import pickle
 import scipy
 import pysvzerod
+from scipy.integrate import solve_ivp
 
 
 def build_simple_tree():
@@ -155,17 +156,17 @@ def test_impedance_trees():
     plt.show()
 
 
-def test_tree_adaptation():
+def test_single_tree_adaptation():
     '''
     test the adaptation of a tree
     '''
-
+    # [19992500.0, -30.70380829, 0.0, 41.41957157, 0.15439045]
     k1_l = 19992500
-    k2_l = -25
+    k2_l = -30.70380829
     k3_l = 0.0
-    lrr_l = 10.0
-    d_l = 0.2
-    d_min = 0.2
+    lrr_l = 41.41957157
+    d_l = 0.15439045
+    d_min = 0.01
 
     time_array = np.linspace(0, 1, 512)
 
@@ -173,18 +174,107 @@ def test_tree_adaptation():
     print(f'building test tree...')
     test_tree.build_tree(initial_d=d_l, d_min=d_min, lrr=lrr_l)
 
+    print("number of vessels in the tree:", test_tree.count_vessels())
+
     with open(f'cases/zerod/tree-adaptation/tree_config_{d_l}_{d_min}.json', 'w') as f:
         json.dump(test_tree.block_dict, f, indent=4)
 
-    print(f"preop tree resistance: {test_tree.root.R_eq}")
+    test_tree2 = copy.deepcopy(test_tree)
 
-    test_tree.adapt_wss_ims(Q=10.0, Q_new=20.0)
+    test_tree3 = copy.deepcopy(test_tree)
 
-    print(f"postop tree resistance: {test_tree.root.R_eq}")
+    R_initial = test_tree.root.R_eq
+    
+    print(f"preop tree resistance: {R_initial}")
+    # cwss-ims adaptation
+    # test_tree.adapt_wss_ims(Q=5.875246798749999, Q_new=6.577696098424999, n_iter=500)
+
+    # cwss adaptation
+    test_tree2.adapt_constant_wss(Q=5.875246798749999, Q_new=6.577696098424999, n_iter=1)
+
+    # cwss-ims adaptation method 2
+    print(f"adapting tree with cwss-ims method 2...")
+    test_tree3.adapt_wss_ims_method2(Q=5.875246798749999, Q_new=6.577696098424999, n_iter=500)
+
+    print(f"preop tree resistance: {R_initial}") # preop tree resistance: 238903.67921232135
+
+    # print(f"cwss-ims adapted tree resistance: {test_tree.root.R_eq}") 
+    # cwss-ims postop tree resistance: 229506.06467586374
+        # with negative thickness gain: 228316.74880420387
+
+
+    print(f"cwss-ims adapted tree resistance method 2: {test_tree3.root.R_eq}") 
+    # cwss-ims adapted tree resistance method 2:
+    # 500 iterations 213495.17043033676 for all parameters 0.00001
+    # for all parameters 0.0001: 213388.98984401594 but we encounter a negative thickness
+
+    # update the inflow for each iteration
+
+    print(f"cwss adapted tree resistance: {test_tree2.root.R_eq}") # cwss adapted tree resistance: 213390.5330223265
+
 
 
     with open(f'cases/zerod/tree-adaptation/tree_config_{d_l}_{d_min}_adapted.json', 'w') as f:
         json.dump(test_tree.block_dict, f, indent=4)
+
+def test_bifurcation_tree_adaptation():
+
+    clinical_targets = ClinicalTargets.from_csv('cases/threed/SU0243/clinical_targets.csv')
+
+    opt_params = pd.read_csv('cases/threed/SU0243/optimized_params.csv')
+    tree_params = {
+        'lpa': [opt_params['k1'][opt_params.pa=='lpa'].values[0], opt_params['k2'][opt_params.pa=='lpa'].values[0], opt_params['k3'][opt_params.pa=='lpa'].values[0], opt_params['lrr'][opt_params.pa=='lpa'].values[0], 0.9, 0.6],
+        'rpa': [opt_params['k1'][opt_params.pa=='rpa'].values[0], opt_params['k2'][opt_params.pa=='rpa'].values[0], opt_params['k3'][opt_params.pa=='rpa'].values[0], opt_params['lrr'][opt_params.pa=='rpa'].values[0], 0.9, 0.6]
+    }
+
+    print(f"tree parameters: {tree_params}")
+
+    d_l = opt_params['diameter'][opt_params.pa=='lpa'].values[0]
+    d_r = opt_params['diameter'][opt_params.pa=='rpa'].values[0]
+
+    print(f"lpa diameter: {d_l}, rpa diameter: {d_r}")
+
+    # flow split right: 0.7998511032283667,
+
+    os.system('pwd')
+
+    preop_pa_config_handler = ConfigHandler.from_json('cases/zerod/tree-adaptation/simple_pa/preop_pa_config.json', is_pulmonary=True)
+    postop_pa_config_handler = ConfigHandler.from_json('cases/zerod/tree-adaptation/simple_pa/postop_pa_config.json', is_pulmonary=True)
+
+    preop_pa_config = PAConfig.from_pa_config(preop_pa_config_handler, clinical_targets)
+    postop_pa_config = PAConfig.from_pa_config(postop_pa_config_handler, clinical_targets)
+
+    preop_pa_config.create_steady_trees(d_l, d_r, [0.5, 0.5], tree_params, 24)
+    postop_pa_config.create_steady_trees(d_l, d_r, [0.5, 0.5], tree_params, 24)
+
+    preop_pa_config.simulate()
+    postop_pa_config.simulate()
+    print(f"preop rpa split: {preop_pa_config.rpa_split}")
+    print(f"postop rpa split: {postop_pa_config.rpa_split}")
+
+    preop_lpa_flow = np.mean(preop_pa_config.result[preop_pa_config.result.name=='branch2_seg0']['flow_out'])
+    postop_lpa_flow = np.mean(postop_pa_config.result[postop_pa_config.result.name=='branch2_seg0']['flow_out'])
+    preop_rpa_flow = np.mean(preop_pa_config.result[preop_pa_config.result.name=='branch4_seg0']['flow_out'])
+    postop_rpa_flow = np.mean(postop_pa_config.result[postop_pa_config.result.name=='branch4_seg0']['flow_out'])
+
+
+    def adapt_cwss(pa_config, n_iter=100):
+        '''
+        adapt the cwss of the pa config
+        '''
+        print(f"computing cwss adaptation for {n_iter} iterations...")
+        cwss_pa_config = copy.deepcopy(pa_config)
+        for i in range(n_iter):
+            print(f"iteration {i+1} of {n_iter}")
+            cwss_pa_config.lpa_tree.adapt_constant_wss(Q=preop_lpa_flow, Q_new=postop_lpa_flow, n_iter=1) # there is some difference between this and the tree in single vessel adaptation and it is taking much longet
+            cwss_pa_config.rpa_tree.adapt_constant_wss(Q=preop_rpa_flow, Q_new=postop_rpa_flow, n_iter=1)
+        cwss_pa_config.update_bcs()
+        cwss_pa_config.simulate()
+
+        print(f"rpa split after {n_iter} iteration cwss adaptation: {cwss_pa_config.rpa_split}")
+
+    adapt_cwss(postop_pa_config, n_iter=1)
+
 
 
 
@@ -209,6 +299,7 @@ def fix_zerod_config():
 if __name__ == '__main__':
 
     # fix_zerod_config()
-    test_tree_adaptation()
+    # test_single_tree_adaptation()5
+    test_bifurcation_tree_adaptation()
 
 

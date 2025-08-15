@@ -9,7 +9,6 @@ from svzerodtrees.adaptation.experiment import *
 from svzerodtrees.adaptation import *
 from svzerodtrees import *
 
-
 # this function is not great and will lively be replaced at some point.
 def post_process_solution(postop_pa, flow_log, sol):
     # helper for post processing
@@ -112,24 +111,26 @@ def test_adapt_cwss_ims_integration_all():
 
 def test_finer_gain_combos():
 
-    gain_sets = [ # from chatGPT
-    [1e-7, 1e-6, 1e-7, 1e-7],        # A
-    [1e-7, 1e-6, 1e-6, 1e-7],        # B
-    [1e-7, 5e-6, 1e-7, 1e-7],        # A
-    [1e-7, 1e-5, 1e-7, 1e-7],        # A
+    scaled_K_arrs = [ # from chatGPT
+    [1e-7, 6.5e-7, 6.5e-7, 1e-7],
     ]
 
-    results_df = run_parallel_gains(
-        scaled_K_arrs=gain_sets,
+    # combinations = list(itertools.product([1, 5, 10], repeat=4))
+    # scaled_K_arrs = [[1e-7 * s for s in combo] for combo in combinations]
+
+    results_df = run_gains(
+        scaled_K_arrs=scaled_K_arrs,
         preop_config_path="cases/zerod/tree-adaptation/simple_pa/preop_pa_config.json",
         postop_config_path="cases/zerod/tree-adaptation/simple_pa/postop_pa_config.json",
         optimized_tree_params_csv="cases/threed/SU0243/optimized_params.csv",
         clinical_targets_csv="cases/threed/SU0243/clinical_targets.csv",
-        max_workers=len(gain_sets),
-        combinations_csv_path= "cases/zerod/tree-adaptation/gain_combinations.csv",
+        fig_dir = "cases/zerod/tree-adaptation/gain_figures",
+        # max_workers=4,
+        # combinations_csv_path= "cases/zerod/tree-adaptation/gain_combinations.csv",
+        # output_csv_path= "cases/zerod/tree-adaptation/gains_lpa_stent_byd.csv"
     )
 
-    existing_csv = Path('gains_lpa_stent_dmin05.csv')
+    existing_csv = Path('gains_lpa_stent_byd.csv')
 
     # ---------------------------------------------------------------------
     # 1. Load current results (if the file is already present)
@@ -171,15 +172,13 @@ def test_adaptation_threed():
         postop_simdir=postop_simdir,
         adapted_simdir=adapted_simdir,
         reduced_order_pa=reduced_order_pa,
-        tree_params_csv=tree_params,
+        tree_params=tree_params,
         clinical_targets=clinical_targets,
         convert_to_cm=True
     )
 
-    K_arr = [1e-7, 1e-7, 1e-7, 1e-7]  # example gain array
-
+    K_arr = [1e-7, 1e-7, 1e-6, 1e-6]  # example gain array
     microvascular_adaptor.adapt_cwss_ims(K_arr)
-
 
 if __name__ == "__main__":
     # run the test
@@ -188,3 +187,5 @@ if __name__ == "__main__":
     # print("Adaptation investigation completed.")
 
     test_finer_gain_combos()
+
+    # test_adaptation_threed()

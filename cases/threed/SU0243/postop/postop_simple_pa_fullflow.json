@@ -1121,7 +1121,7 @@
                 "R_poiseuille": 1.0,
                 "C": 0.0,
                 "L": 0.0,
-                "stenosis_coefficient": 19.7
+                "stenosis_coefficient": 19.70406826411002
             }
         },
         {
@@ -1136,7 +1136,7 @@
                 "R_poiseuille": 1.0,
                 "C": 0.0,
                 "L": 0.0,
-                "stenosis_coefficient": 19.7
+                "stenosis_coefficient": 19.70406826411002
             }
         },
         {
@@ -1148,7 +1148,7 @@
                 "R_poiseuille": 1.0,
                 "C": 0.0,
                 "L": 0.0,
-                "stenosis_coefficient": 7.6
+                "stenosis_coefficient": 7.6055761457745374
             }
         },
         {
@@ -1163,8 +1163,9 @@
                 "R_poiseuille": 1.0,
                 "C": 0.0,
                 "L": 0.0,
-                "stenosis_coefficient": 7.6
+                "stenosis_coefficient": 7.6055761457745374
             }
         }
-    ]
+    ],
+    "trees": []
 }

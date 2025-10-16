@@ -4,18 +4,15 @@ import os
 import numpy as np
 sys.path.append('/home/ndorn/Documents/Stanford/PhD/Simvascular/svZeroDPlus/structured_trees/src')
 # print(sys.path)
-from svzerodtrees.structuredtree import StructuredTree
+
 from pathlib import Path
 from svzerodtrees.post_processing.stree_visualization import *
 import matplotlib.pyplot as plt
 from svzerodtrees.utils import *
 from scipy.optimize import minimize
 from svzerodtrees.adaptation import *
-from svzerodtrees import operation, preop, interface
-from svzerodtrees.config_handler import ConfigHandler
-from svzerodtrees.result_handler import ResultHandler
-from svzerodtrees.preop import ClinicalTargets, PAConfig
-from svzerodtrees.inflow import Inflow
+from svzerodtrees.io import ConfigHandler, Inflow
+from svzerodtrees.tune_bcs import ClinicalTargets, PAConfig
 import pickle
 
 
@@ -50,7 +47,7 @@ def test_rh_chamber():
     '''
     test the rh_chamber model'''
 
-    input_file = 'tests/cases/rh_chamber/rh_chamber_mmhg.json'
+    input_file = 'cases/zerod/rh_chamber/rh_chamber_mmhg.json'
 
     with open(input_file, 'r') as f:
         config = json.load(f)
@@ -58,8 +55,10 @@ def test_rh_chamber():
 
     result = pysvzerod.simulate(config)
 
-    plot_result(result, 'pressure_in', 'vessel', 'tests/cases/rh_chamber/pressure_in_mmhg.png')
-    plot_result(result, 'flow_in', 'vessel', 'tests/cases/rh_chamber/flow_in_mmhg.png')
+    fig, axs = plt.subplots(2, 1)
+    axs[0].plot(result['time'], result['pressure_in'], label='inlet pressure (mmHg)')
+    axs[1].plot(result['time'], result['flow_in'], label='inlet flow (mL/s)')
+    plt.show()
 
 
 def test_unsteady_pa():
@@ -267,12 +266,14 @@ def plot_impedance_result(result_df):
 
 if __name__ == "__main__":
 
-    result = pysvzerod.simulate('tests/cases/impedance/trunc_pa_dmin_0.1.json')
+    # result = pysvzerod.simulate('tests/cases/impedance/trunc_pa_dmin_0.1.json')
 
     # print('simulation complete!')
 
-    plot_impedance_result(result)
+    # plot_impedance_result(result)
 
     # test_impedance()
 
     # test_impedance_3dcoupled()
+
+    test_rh_chamber()

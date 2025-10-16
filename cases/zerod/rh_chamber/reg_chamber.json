@@ -1,0 +1,94 @@
+{
+	"boundary_conditions": [
+	{
+		"bc_name": "INLET",
+		"bc_type": "PRESSURE",
+		"bc_values": {
+			"P": [
+				5333.0,
+				5333.0
+			],
+			"t": [
+				0.0,
+				1.0
+			]
+		}
+	},
+	{
+		"bc_name": "OUTLET",
+		"bc_type": "RCR",
+		"bc_values": {
+			"Pd": 9332.4,
+			"Rp": 100.0,
+			"Rd": 900.0,
+			"C": 1e-3
+		}
+	}
+	],
+	"junctions": [],
+	"simulation_parameters": {
+		"density": 1.06,
+		"model_name": "RH_chamber",
+		"number_of_cardiac_cycles": 10,
+		"number_of_time_pts_per_cardiac_cycle": 1000,
+		"viscosity": 0.04,
+		"output_all_cycles":false,
+		"output_variable_based":true
+	},
+	"valves": [
+		{
+                "type": "RegazzoniValve",
+                "name": "valve0",
+                "params": {
+                    "Rmax": 6665,
+                    "Rmin": 1.665,
+                    "upstream_block": "INLET",
+                    "downstream_block": "ventricle"
+                }
+            },
+            {
+                "type": "RegazzoniValve",
+                "name": "valve1",
+                "params": {
+                    "Rmax": 6665,
+                    "Rmin": 1.665,
+                    "upstream_block": "ventricle",
+                    "downstream_block": "vessel"
+                }
+            }
+	],
+	"chambers": [
+		{
+            "type": "RegazzoniChamber",
+            "name": "ventricle",
+            "values": {
+                "Emax": 800.0158240056528,
+                "Epass": 60.85565535747109,
+                "Vrest": 72.05452710344869,
+                "contract_start": 0.1,
+                "relax_start": 0.3,
+                "contract_duration": 0.2,
+                "relax_duration": 0.3
+            }
+        }
+	],
+	"vessels": [
+		{
+			"boundary_conditions": {
+				"outlet": "OUTLET"
+			},
+			"vessel_id": 0,
+			"vessel_length": 10.0,
+			"vessel_name": "vessel",
+			"zero_d_element_type": "BloodVessel",
+			"zero_d_element_values": {
+				"C": 1e-2,
+				"R_poiseuille": 100.0,
+				"L": 1.0
+			}
+		}
+	],
+	"initial_condition": {
+		"Vc:ventricle": 50.58981029386334
+	}
+}

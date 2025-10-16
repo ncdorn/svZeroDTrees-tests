@@ -277,7 +277,6 @@ def test_bifurcation_tree_adaptation():
 
 
 
-
 def fix_zerod_config():
     '''
     fix the zerod config for the impedance trees

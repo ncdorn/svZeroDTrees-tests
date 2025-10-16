@@ -1,11 +1,12 @@
 import svzerodtrees
-from svzerodtrees.config_handler import ConfigHandler
-from svzerodtrees.inflow import Inflow
-from svzerodtrees.structuredtree import StructuredTree
+from svzerodtrees.io import ConfigHandler, Inflow
+from svzerodtrees.microvasculature import *
+from svzerodtrees.tune_bcs import *
 from svzerodtrees.utils import *
-from svzerodtrees.simulation_directory import *
-from svzerodtrees.preop import *
+from svzerodtrees.simulation import *
+from svzerodtrees import post_processing
 import pysvzerod
+import pandas as pd
 import pickle
 import os
 import numpy as np
@@ -275,7 +276,33 @@ def test_tune_pa_trees():
 
     clinical_targets = ClinicalTargets(wedge_p=5.0, mpa_p=[72.0, 14.0, 38.0], rpa_split=0.8)
 
-    optimize_impedance_bcs(config_handler, msh_surf_path, clinical_targets, d_min=0.01, convert_to_cm=True, n_procs=24)
+    tune_space = TuneSpace(
+                    free=[
+                        FreeParam("lpa.alpha", init=0.9, lb=0.1, ub=0.95),
+                        FreeParam("lpa.beta",  init=0.6, lb=0.1, ub=0.65),
+                        FreeParam("rpa.alpha", init=0.9, lb=0.7, ub=0.99),
+                        FreeParam("rpa.beta",  init=0.6, lb=0.3, ub=0.9),
+                        FreeParam("comp.lpa.C",   init=6.6e4, lb=1.0e4, ub=2.0e5, to_native=positive, from_native=np.log),
+                        FreeParam("comp.rpa.C",   init=6.6e4, lb=1.0e4, ub=2.0e5, to_native=positive, from_native=np.log),
+                    ],
+                    fixed=[
+                        FixedParam("lrr", 10.0),
+                        FixedParam("d_min", 0.1),
+                    ],
+                    tied=[]
+                )
+    
+    tuner = ImpedanceTuner(
+         config_handler,
+         msh_surf_path,
+         clinical_targets,
+         tune_space,
+         n_procs=8,
+         solver="Nelder-Mead"
+    )
+
+    tuner.tune()
+
 
 
 def test_construct_impedance_trees():
@@ -602,6 +629,56 @@ def test_stenosis_coefficient():
     # plt.show()
 
     
+def test_impedance_tree_computation():
+
+    config_handler = ConfigHandler.from_json('cases/zerod/test_sheep_tree/zerod_config.json')
+
+    time_array = config_handler.inflows[next(iter(config_handler.inflows))].t
+
+    opt_params = pd.read_csv(os.path.join('cases/zerod/test_sheep_tree/optimized_params.csv'))
+
+    lpa_params = TreeParameters.from_row_new(opt_params[opt_params.pa == 'lpa'])
+
+    pa_tree = StructuredTree(name='LPA', time=time_array, simparams=config_handler.simparams, compliance_model=lpa_params.compliance_model)
+
+
+    pa_tree.build_tree(initial_d=lpa_params.diameter, d_min=0.1, lrr=lpa_params.lrr)
+    pa_tree.compute_olufsen_impedance(n_procs=8)
+
+    print(pa_tree.Z_t)
+
+def test_tree_sim():
+
+    config_handler = ConfigHandler.from_json('cases/zerod/test_sheep_tree/zerod_config.json')
+
+    time_array = config_handler.inflows[next(iter(config_handler.inflows))].t
+
+    opt_params = pd.read_csv(os.path.join('cases/zerod/test_sheep_tree/optimized_params.csv'))
+
+    lpa_params = TreeParameters.from_row_new(opt_params[opt_params.pa == 'lpa'])
+
+    pa_tree = StructuredTree(name='LPA', time=time_array, simparams=config_handler.simparams, compliance_model=lpa_params.compliance_model)
+
+    pa_tree.build_tree(initial_d=lpa_params.diameter, d_min=0.05, lrr=lpa_params.lrr)
+
+    # simulate the config
+    result = config_handler.simulate()
+
+    lpa_flow = result[result.name=='branch2_seg0']['flow_out'].to_list()
+
+    print("simulating tree")
+    result = pa_tree.simulate(Q_in=lpa_flow, json_path='cases/zerod/test_sheep_tree/lpa_tree.json',Pd=6666.0)
+
+    vessels = pa_tree.enumerate_vessels()
+
+    fig, axes = post_processing.tree_figures.plot_tree_metrics_by_generation(vessels)
+
+    plt.savefig('cases/zerod/test_sheep_tree/lpa_tree_metrics.png')
+
+    fig, axes, t_ref = post_processing.tree_figures.plot_waveforms_by_generation(vessels)
+
+    plt.savefig('cases/zerod/test_sheep_tree/lpa_tree_waveforms.png')
+
 
 if __name__ == '__main__':
     # test_impedance_tree(build_tree=True)
@@ -625,4 +702,6 @@ if __name__ == '__main__':
     # test_pa_config(False)
 
     # test_stenosis_coefficient()
+
+    # test_tree_sim()
 

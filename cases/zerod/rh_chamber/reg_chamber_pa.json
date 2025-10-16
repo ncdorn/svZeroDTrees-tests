@@ -5,8 +5,8 @@
 		"bc_type": "PRESSURE",
 		"bc_values": {
 			"P": [
-				8000.4,
-				8000.4
+				10665.0,
+				10665.0
 			],
 			"t": [
 				0.0,
@@ -82,42 +82,40 @@
 	},
 	"valves": [
 		{
-			"type": "ValveTanh",
-			"name": "valve0",
-			"params": {
-				"Rmax": 100.0,
-				"Rmin": 0.1,
-				"Steepness": 10.0,
-				"upstream_block": "INLET",
-				"downstream_block": "ventricle"
-			}
-		},
-		{
-			"type": "ValveTanh",
-			"name": "valve1",
-			"params": {
-				"Rmax": 0.0,
-				"Rmin": 0.0,
-				"Steepness": 10.0,
-				"upstream_block": "ventricle",
-				"downstream_block": "vessel"
-			}
-		}
+                "type": "RegazzoniValve",
+                "name": "valve0",
+                "params": {
+                    "Rmax": 6665,
+                    "Rmin": 1.665,
+                    "upstream_block": "INLET",
+                    "downstream_block": "ventricle"
+                }
+            },
+            {
+                "type": "RegazzoniValve",
+                "name": "valve1",
+                "params": {
+                    "Rmax": 6665,
+                    "Rmin": 1.665,
+                    "upstream_block": "ventricle",
+                    "downstream_block": "vessel"
+                }
+            }
 	],
 	"chambers": [
 		{
-			"type": "ChamberElastanceInductor",
-			"name": "ventricle",
-			"values": {
-				"Emax": 800.26,
-				"Emin": 100.66,
-				"Vrd": 40.0,
-				"Vrs": 10.0,
-				"t_active": 0.1,
-				"t_twitch": 0.3,
-				"Impedance": 0.01
-			}
-		}
+            "type": "RegazzoniChamber",
+            "name": "ventricle",
+            "values": {
+                "Emax": 1000.0158240056528,
+                "Epass": 110.085565535747109,
+                "Vrest": 40.05452710344869,
+                "contract_start": 0.1,
+                "relax_start": 0.25,
+                "contract_duration": 0.15,
+                "relax_duration": 0.3
+            }
+        }
 	],
 	"vessels": [
         {
@@ -139,8 +137,8 @@
             "zero_d_element_type": "BloodVessel",
             "zero_d_element_values": {
                 "R_poiseuille": 1.0,
-                "C": 1e-3,
-                "L": 1.0,
+                "C": 0.0,
+                "L": 0.0,
                 "stenosis_coefficient": 694.0991488781809
             }
         },
@@ -166,8 +164,8 @@
             "zero_d_element_type": "BloodVessel",
             "zero_d_element_values": {
                 "R_poiseuille": 1.0,
-                "C": 1e-3,
-                "L": 1.0,
+                "C": 0.0,
+                "L": 0.0,
                 "stenosis_coefficient": 6.058318111859639
             }
         },

@@ -57,12 +57,13 @@ def generate_postop_reduced_config(preop_simdir_path, postop_simdir_path):
     preop_simdir = simulation.SimulationDirectory.from_directory(preop_simdir_path, convert_to_cm=True)
     postop_simdir = simulation.SimulationDirectory.from_directory(postop_simdir_path, convert_to_cm=True)
 
-    # postop_simdir.optimize_nonlinear_resistance("cases/threed/SU0243/pa_config_test_tuning.json")
-
-    S_lpa_preop, S_rpa_preop = preop_simdir.compute_pressure_drop(steady=False)
     
 
-    S_lpa_postop, S_rpa_postop = postop_simdir.compute_pressure_drop(steady=False)
+    # S_lpa_preop, S_rpa_preop = preop_simdir.compute_pressure_drop(steady=False)
+    S_lpa_preop, S_rpa_preop = preop_simdir.optimize_nonlinear_resistance("cases/threed/SU0243/reduced_preop_config.json",initial_guess=[100, 100])
+
+    # S_lpa_postop, S_rpa_postop = postop_simdir.compute_pressure_drop(steady=False)
+    S_lpa_postop, S_rpa_postop = postop_simdir.optimize_nonlinear_resistance("cases/threed/SU0243/reduced_preop_config.json",initial_guess=[100, 100])
 
     print(f"Preop LPA resistance: {S_lpa_preop:.2f}")
     print(f"Preop RPA resistance: {S_rpa_preop:.2f}")
@@ -177,15 +178,15 @@ def test_adaptation_threed():
         convert_to_cm=True
     )
 
-    K_arr = [1e-7, 1e-7, 1e-6, 1e-6]  # example gain array
+    K_arr = [1e-8, 6.5e-8, 6.5e-8, 1e-8]  # example gain array
     microvascular_adaptor.adapt_cwss_ims(K_arr)
 
 if __name__ == "__main__":
     # run the test
-    # generate_postop_reduced_config("cases/threed/SU0243/preop", "cases/threed/SU0243/postop")
+    generate_postop_reduced_config("cases/threed/SU0243/preop", "cases/threed/SU0243/postop")
     # test_adapt_cwss_ims_integration_all()
     # print("Adaptation investigation completed.")
 
-    test_finer_gain_combos()
+    # test_finer_gain_combos()
 
     # test_adaptation_threed()

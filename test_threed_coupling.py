@@ -6,7 +6,7 @@ import time
 sys.path.append('/home/ndorn/Documents/Stanford/PhD/Simvascular/svZeroDPlus/structured_trees/src')
 from svzerodtrees import *
 from pathlib import Path
-from svzerodtrees.post_processing.stree_visualization import *
+from svzerodtrees.tune_bcs import *
 import matplotlib.pyplot as plt
 from svzerodtrees.utils import *
 from scipy.optimize import minimize
@@ -82,15 +82,37 @@ def test_sim_dir():
 
 def test_adapt_trees():
 
-    preop_sim_dir = SimulationDirectory.from_directory('cases/threed/SU0243/preop')
-    postop_sim_dir = SimulationDirectory.from_directory('cases/threed/SU0243/postop')
-    adapted_sim_path = 'cases/threed/SU0243/adapted'
 
-    # adapt_threed(preop_sim_dir, postop_sim_dir, adapted_sim_path)
+    jeff_dir = '/Users/ndorn/Documents/Stanford/PhD/Marsden_Lab/SimVascular/threed_models/PPAS/tof-stent/TST-STAN-5/TST-STAN-5-pre-jeff-li/Simulations/cwss-adaptation'
+
+    preop_sim_dir = SimulationDirectory.from_directory(jeff_dir + '/preop')
+    postop_sim_dir = SimulationDirectory.from_directory(jeff_dir + '/postop')
+    adapted_sim_dir = SimulationDirectory.from_directory(jeff_dir + '/adapted')
+
+    clinical_targets = ClinicalTargets.from_csv('/Users/ndorn/Documents/Stanford/PhD/Marsden_Lab/SimVascular/threed_models/PPAS/tof-stent/TST-STAN-5/clinical_targets.csv')
+
+    adaptor = MicrovascularAdaptor(
+        preop_sim_dir,
+        postop_sim_dir,
+        adapted_sim_dir,
+        clinical_targets,
+        bc_type="resistance"
+    )
 
 
+    t_start = time.time()
+    n_iter = 1
+    adaptor.adapt_resistance(n_iter=n_iter, d_min=0.05, coupler_path=f'adapted_{n_iter}iter.json', max_workers=1, parallel=False)
+
+    t_end = time.time()
+
+    print(f"Adaptation took {t_end - t_start} seconds")
+    # non-parallel: ~55 seconds with d_mi=0.05
+    # parallel: ~31 seconds
 
 if __name__ == '__main__':
     # test_adapt_trees()
 
-    test_sim_dir()
+    # test_sim_dir()
+
+    test_adapt_trees()

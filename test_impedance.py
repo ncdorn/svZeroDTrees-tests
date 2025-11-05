@@ -278,18 +278,23 @@ def test_tune_pa_trees():
 
     tune_space = TuneSpace(
                     free=[
-                        FreeParam("lpa.alpha", init=0.9, lb=0.1, ub=0.95),
-                        FreeParam("lpa.beta",  init=0.6, lb=0.1, ub=0.65),
-                        FreeParam("rpa.alpha", init=0.9, lb=0.7, ub=0.99),
-                        FreeParam("rpa.beta",  init=0.6, lb=0.3, ub=0.9),
-                        FreeParam("comp.lpa.C",   init=6.6e4, lb=1.0e4, ub=2.0e5, to_native=positive, from_native=np.log),
-                        FreeParam("comp.rpa.C",   init=6.6e4, lb=1.0e4, ub=2.0e5, to_native=positive, from_native=np.log),
+                        FreeParam("lpa.alpha", init=0.7, lb=0.1, ub=0.8),
+                        FreeParam("lpa.beta",  init=0.7, lb=0.1, ub=0.8),
+                        FreeParam("rpa.alpha", init=0.7, lb=0.1, ub=0.8),
+                        FreeParam("rpa.beta",  init=0.7, lb=0.1, ub=0.8),
+                        # FreeParam("comp.lpa.C",   init=1.0e6, lb=1.0e4, ub=1.0e8, to_native=positive, from_native=np.log),
+                        FreeParam("comp.lpa.k2", init=-25.0, lb=-100.0, ub=-1.0),
+                        # FreeParam("comp.rpa.C",   init=6.6e4, lb=1.0e4, ub=2.0e5, to_native=positive, from_native=np.log),
                     ],
                     fixed=[
                         FixedParam("lrr", 10.0),
-                        FixedParam("d_min", 0.1),
+                        FixedParam("d_min", 0.01),
                     ],
-                    tied=[]
+                    tied=[
+                        TiedParam("comp.rpa.k2", "comp.lpa.k2")
+                        # TiedParam("rpa.alpha", "lpa.alpha"),
+                        # TiedParam("rpa.beta", "lpa.beta")
+                    ]
                 )
     
     tuner = ImpedanceTuner(
@@ -297,6 +302,7 @@ def test_tune_pa_trees():
          msh_surf_path,
          clinical_targets,
          tune_space,
+         compliance_model="olufsen",
          n_procs=8,
          solver="Nelder-Mead"
     )
@@ -642,8 +648,12 @@ def test_impedance_tree_computation():
     pa_tree = StructuredTree(name='LPA', time=time_array, simparams=config_handler.simparams, compliance_model=lpa_params.compliance_model)
 
 
-    pa_tree.build_tree(initial_d=lpa_params.diameter, d_min=0.1, lrr=lpa_params.lrr)
-    pa_tree.compute_olufsen_impedance(n_procs=8)
+    pa_tree.build(initial_d=lpa_params.diameter, 
+                                 d_min=0.1, 
+                                 lrr=lpa_params.lrr, 
+                                 alpha=lpa_params.alpha, 
+                                 beta=lpa_params.beta)
+    pa_tree.compute_olufsen_impedance()
 
     print(pa_tree.Z_t)
 
@@ -659,7 +669,11 @@ def test_tree_sim():
 
     pa_tree = StructuredTree(name='LPA', time=time_array, simparams=config_handler.simparams, compliance_model=lpa_params.compliance_model)
 
-    pa_tree.build_tree(initial_d=lpa_params.diameter, d_min=0.05, lrr=lpa_params.lrr)
+    pa_tree.build(initial_d=lpa_params.diameter, 
+                                 d_min=0.05, 
+                                 lrr=lpa_params.lrr, 
+                                 alpha=lpa_params.alpha, 
+                                 beta=lpa_params.beta)
 
     # simulate the config
     result = config_handler.simulate()
@@ -673,15 +687,38 @@ def test_tree_sim():
 
     fig, axes = post_processing.tree_figures.plot_tree_metrics_by_generation(vessels)
 
+    # fig, axes, summaries, data = post_processing.plot_generation_metrics_for_tree(pa_tree)
+
     plt.savefig('cases/zerod/test_sheep_tree/lpa_tree_metrics.png')
 
     fig, axes, t_ref = post_processing.tree_figures.plot_waveforms_by_generation(vessels)
 
+    # fig, axes, data = post_processing.generation_waveforms.plot_generation_waveforms_for_tree(pa_tree)
+
     plt.savefig('cases/zerod/test_sheep_tree/lpa_tree_waveforms.png')
+
+
+def test_sensitivity_analysis():
+
+    from svzerodtrees.tune_bcs.sensitivity import run_structured_tree_sensitivity, run_structured_tree_lhs_sensitivity
+
+    # run_structured_tree_sensitivity(
+    #     config_path="cases/zerod/sensitivity/simplified_nonlinear_zerod.json",
+    #     output_dir="cases/zerod/sensitivity/results",
+    #     n_procs=4,  # adjust for your machine
+    # )
+
+    run_structured_tree_lhs_sensitivity(
+        config_path="cases/zerod/sensitivity/simplified_nonlinear_zerod.json",
+        output_dir="cases/zerod/sensitivity/results",
+        n_procs=4,  # adjust for your machine
+    )
 
 
 if __name__ == '__main__':
     # test_impedance_tree(build_tree=True)
+
+    # test_impedance_tree_computation()
     
     # tune_tree()
 
@@ -704,4 +741,6 @@ if __name__ == '__main__':
     # test_stenosis_coefficient()
 
     # test_tree_sim()
+
+    # test_sensitivity_analysis()
 
